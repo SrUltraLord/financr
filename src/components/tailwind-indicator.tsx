@@ -1,3 +1,7 @@
+/**
+ * This component was retrieved from the Taxonomy repo:
+ * https://github.com/shadcn/taxonomy
+ */
 export function TailwindIndicator() {
   if (process.env.NODE_ENV === 'production') return null
 

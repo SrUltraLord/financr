@@ -10,6 +10,11 @@ const buttonStyles = cva('rounded-md font-bold text-center transition-all', {
         'hover:bg-indigo-600',
         'active:bg-indigo-700',
       ]),
+      secondary: clsx([
+        'bg-slate-200 text-black',
+        'hover:bg-slate-300',
+        'active:bg-slate-400',
+      ]),
       ghost: clsx([
         'border-brand border-2 text-brand',
         'hover:bg-gray-50 hover:shadow-md hover:shadow-indigo-500/50',

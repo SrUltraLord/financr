@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         brand: '#6366f1',
+        secondary: '#f6f7eb',
         'primary-foreground': '',
         'secondary-foreground': '',
       },
