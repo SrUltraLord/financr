@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { Github } from 'lucide-react'
+
 import { buttonStyles } from '../ui/button'
 
 export function LandingHero() {
@@ -26,17 +28,21 @@ export function LandingHero() {
               href="#"
               className={buttonStyles({
                 className: 'flex-1',
+                size: 'lg',
               })}
             >
               Give it a try!
             </Link>
             <Link
-              href="#"
+              href="https://github.com/SrUltraLord/financr"
+              target="_blank"
               className={buttonStyles({
                 className: 'flex-1',
-                variant: 'ghost',
+                variant: 'outline',
+                size: 'lg',
               })}
             >
+              <Github className="mr-2" />
               Github
             </Link>
           </div>
