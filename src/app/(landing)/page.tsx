@@ -1,6 +1,6 @@
 import { TopNavbar } from '@/components/shared/top-navbar'
-import { LandingHero } from '../components/landing/landing-hero'
-import { FeaturesSection } from '@/components/landing/features'
+import { LandingHero } from './_components/landing-hero'
+import { FeaturesSection } from './_components/features'
 
 export default function Index() {
   return (
