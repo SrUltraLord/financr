@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { Wallet, XIcon, MenuIcon } from 'lucide-react'
 
-import { buttonStyles } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import Link from 'next/link'
 
 type Props = {
@@ -29,7 +29,7 @@ export function TopNavbar({}: Props) {
         </div>
 
         <Link
-          className={buttonStyles({
+          className={buttonVariants({
             className: 'hidden md:flex',
             variant: 'secondary',
           })}
@@ -41,7 +41,7 @@ export function TopNavbar({}: Props) {
         {/* Toggle menu button */}
         <button
           className={twMerge(
-            buttonStyles({
+            buttonVariants({
               variant: 'ghost',
             }),
             'flex p-1 md:hidden',

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Github } from 'lucide-react'
 
-import { buttonStyles } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 
 export function LandingHero() {
   return (
@@ -26,7 +26,7 @@ export function LandingHero() {
           <div className="flex w-96 space-x-4 md:space-x-6">
             <Link
               href="/login"
-              className={buttonStyles({
+              className={buttonVariants({
                 className: 'flex-1',
                 size: 'lg',
               })}
@@ -36,7 +36,7 @@ export function LandingHero() {
             <Link
               href="https://github.com/SrUltraLord/financr"
               target="_blank"
-              className={buttonStyles({
+              className={buttonVariants({
                 className: 'flex-1',
                 variant: 'outline',
                 size: 'lg',

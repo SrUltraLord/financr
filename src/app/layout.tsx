@@ -1,4 +1,4 @@
-import { TailwindIndicator } from '@/components/tailwind-indicator'
+import { TailwindIndicator } from '@/components/shared/tailwind-indicator'
 
 import '@/styles/global.css'
 
