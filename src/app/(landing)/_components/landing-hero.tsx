@@ -9,14 +9,14 @@ export function LandingHero() {
       <div className="container max-w-[64rem] flex-col space-y-4 px-4 text-center md:space-y-6 md:px-8">
         <h1 className="text-5xl font-extrabold md:text-6xl lg:text-7xl">
           Manage your{' '}
-          <span className="bg-gradient-to-r from-brand to-indigo-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary to-indigo-600 bg-clip-text text-transparent">
             personal finances
           </span>{' '}
           like a pro
         </h1>
 
         <h2 className="text-lg text-gray-600 md:text-xl lg:text-2xl">
-          <span className="font-bold text-brand">Financr</span> is an
+          <span className="font-bold text-primary">Financr</span> is an
           open-source side project made with love and with a main objective:
           learn cool new tech.
         </h2>
