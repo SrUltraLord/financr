@@ -1,10 +1,11 @@
-import { Button } from '@/components/ui/button'
+import { LoginForm } from '../_components/login-form'
 
 export default function LoginPage() {
   return (
-    <div>
-      <h1 className="text-6xl text-white">Hello from login</h1>
-      <Button>Hello</Button>
+    <div className="grid h-screen w-full place-items-center">
+      <div className="flex min-w-[28rem] flex-col space-y-4 rounded-lg bg-white p-4">
+        <LoginForm />
+      </div>
     </div>
   )
 }
