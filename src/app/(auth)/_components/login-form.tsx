@@ -62,40 +62,40 @@ export function LoginForm() {
             )}
           />
 
-          <FormField
-            control={loginForm.control}
-            name="password"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Password</FormLabel>
-                <FormControl>
-                  <Input type="password" placeholder="supersecret" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+          <div className="flex w-full flex-col space-y-2">
+            <FormField
+              control={loginForm.control}
+              name="password"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Password</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="password"
+                      placeholder="supersecret"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <div className="flex w-full place-content-end">
+              <span className="text-xs text-gray-500">
+                Forgot your password?
+              </span>
+            </div>
+          </div>
 
           <Button
             type="submit"
             className="w-full"
             disabled={!loginForm.formState.isValid}
           >
-            Login
+            Sign in
           </Button>
         </div>
-
-        <div className="flex w-full flex-row items-center space-x-3">
-          <hr className="h-px w-1/3 border-none bg-gray-200" />
-          <span className="flex w-1/3 justify-center align-text-top text-gray-400">
-            or login with
-          </span>
-          <hr className="h-px w-1/3 border-none bg-gray-200" />
-        </div>
-
-        <Button variant="secondary" className="w-full">
-          Google
-        </Button>
       </form>
     </Form>
   )
