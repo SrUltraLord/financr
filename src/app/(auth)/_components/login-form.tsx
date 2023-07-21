@@ -32,7 +32,7 @@ export function LoginForm() {
       email: undefined,
       password: undefined,
     },
-    mode: 'all',
+    mode: 'onSubmit',
   })
 
   const onSubmit = (formValues: LoginFormSchema): void => {
